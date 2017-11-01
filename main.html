@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.content {
+      width: 75%;
+}
+.more {
+   float: right;
+}
+    body {
+    background-color: khaki;
+}
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    border:outset 5px black;
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+    border: inset 5px white;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Enver Creek Secondary</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Home</li>
+      <li>Teams</li>
+      <li>Departments</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+ 
+  <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
+    <h1>Welcome to EC teams website</h1>
+    <p>Here at Enver Creek Secondary, playing sports is a very big part of the Enver Creek Spirit,We have different levels so everyone can join in!</p>
+    <p>We train our kids to do their best and be respectful</p>
+  </div>  
+
+  
+</div><div class="footer">
+  <p align=left> 14505-84 Avenue</p>
+  <p align=right> Contact Us:</p>
+  <p align=right> 605-555-1234</p>
+</div>
+
+</body>
+</html>
