@@ -1,0 +1,17 @@
+ var weatherNow = prompt("what is it doing outside right now");
+ var clothing;
+ 
+ if(weatherNow === "sunny" ) {
+    clothing = "shorts and t shirt";
+ } else if (weatherNow === "rain") {
+     clothing = "rain coats and boots";
+ } else if (weatherNow === "snow") {
+      clothing = "scarf and boots";
+ } else if (weatherNow === "windy") {
+     clothing = "hoodie";
+ } else if (weatherNow === "cloudy") {
+      clothing = "glooomy";
+ };
+ 
+ 
+document.write("the weather today is "+ weatherNow + " so you should wear " + clothing);
