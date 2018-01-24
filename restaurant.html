@@ -4,67 +4,140 @@
 <title>World Burgers</title>
 
 <style>
-* {
-    box-sizing: border-box;
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
 }
-body {
-   background-image: url("http://ak8.picdn.net/shutterstock/videos/8644738/thumb/1.jpg");
+.border{border-style:groove;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-
-
-.header {
-    background-color: white;
-    padding: 50px;
-    text-align: center;
-}
-
-
-.column {
+li {
     float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px;
+    border-right:1px solid #bbb;
 }
-
-
-.row: {
-    content: "";
-    display: table;
-    clear: both;
+li:last-child {
+    border-right: none;
 }
-
-
-.footer {
-    background-color: grey;
-    padding: 10px;
+li a {
+    display: block;
+    color: white;
     text-align: center;
-}
-
-(max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-
+    padding: 14px 16px;
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h2>World Burgers</h2>
-  <h3>Giving The Best Burgers Since 1850</h3>
-    <img src="http://www.chewboom.com/wp-content/uploads/2016/05/Hard-Rock-Cafe-World-Burger-Tour-is-back-for-the-2016-burger-season-678x381.jpg">
-  <p>Here at World Burgers it is important for us to serve the best and tasty burgers from all places in the world, We have multiple Master chefs from different countries to give you the best taste of of each continent. </p>
+<body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Menu">Menu</a></li>
+  <li><a href="#location">Location</a></li>
+</ul>
+<center>
+ <h1 class="border">World Burgers</h1>
+ <img src="http://www.cloudeddottedmind.com/wp-content/uploads/2015/03/Blend-Casablanca-Burger-Restaurant-Layout-4.jpg">
+ <p>Open from 8:00am-10:00pm</p>
+ 
+ <p>Here at World Burgers it is important for us to serve the best and tasty burgers from all places in the world, We have multiple Master chefs from different countries to give you the best tastes of of each continent
+ </p>
+ <p>
+ World Burgers was opened up in 1903 in celebration of the first ever plane to fly.</p>
+ 
+ 
+ <div class id="Menu">
+ <h2 class="border">Menu</h2>
+ 
+ 
+<table id="breakfast">
+  <tr>
+    <th>Breakfast</th>
+      <th>Price</th>
+  </tr>
+  <tr>    
+  <td>Maple Bacon Breakfast Burger</td><td align= right;> $5.50</td>
+  </tr>
+  <tr> 
+  <td>Veggie salad</td><td align= right;> $3.50</td>
+  </tr>
+  <tr> 
+  <td>Egg Rolls</td><td align= right;> $4.50</td>
+  </tr>
+  <tr>
+    <td>Pork Sausages</td><td align= right;> $5.00</td>
+  </tr>
+  <tr>
+    <td>Classic Pancakes</td><td align= right;> $4.50</td>
+  </tr>
+</table>
+
+
+<div>
+<table id="lunch">
+  <tr>
+    <th>Lunch</th>
+    <th>Price</th>
+  </tr>
+  <tr>    
+  <td>Lunch burger</td><td align= right;> $3.50</td>
+  </tr>
+  <tr> 
+  <td>Cheese-Steak Sandwhich</td><td align= right;> $4.50</td>
+  </tr>
+  <tr> 
+  <td>Egg Sandwhich</td><td align= right;> $6.50</td>
+  </tr>
+  <tr>
+    <td>Pork Sausages</td><td align= right;> $4.50</td>
+  </tr>
+  <tr>
+    <td>Maccoroni and Cheese</td><td align= right;> $5.50</td>
+  </tr>
+</table>
 </div>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">Column</div>
-  <div class="column" style="background-color:#bbb;">Column</div>
-  <div class="column" style="background-color:#ccc;">Column</div>
+
+
+
+<div>
+<table id="dinner">
+  <tr>
+    <th>Dinner</th>
+    <th>Price</th>
+  </tr>
+  <tr>    
+  <td>Indian burger</td><td align= right;> $8.50</td>
+  </tr>
+  <tr> 
+  <td>LiL johns burger</td><td align= right;> $9.50</td>
+  </tr>
+  <tr> 
+  <td>Party in the Usa Burger</td><td align= right;> $8.50</td>
+  </tr>
+  <tr>
+    <td>Australian Outback burger</td><td align= right;> $9.50</td>
+  </tr>
+  <tr>
+    <td>London tower burger</td><td align= right;> $7.50</td>
+  </tr>
+</table>
 </div>
 
+
+  <div class id="location">
+   <h3 class="border">Location</h3>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510678414010!6m8!1m7!1s_zkV3iegGBPqlopal5fCYA!2m2!1d49.27517164147596!2d-123.1167303290824!3f0!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<h2>Location in Langley</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510678787486!6m8!1m7!1sJWkb6cFexnePf8rZEyickg!2m2!1d49.13338197359106!2d-122.6685136727836!3f341.8156518898912!4f-3.257337693585896!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<h2>Location in Delta</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510678996870!6m8!1m7!1sPoGwejhto6CY5f9cLpPTvQ!2m2!1d49.14670712890385!2d-122.8902771433591!3f0!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<h2>Location in Richmond</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510679066979!6m8!1m7!1sEuwTy2st3w8KlOQZMOJqEg!2m2!1d49.16311575361998!2d-123.1403037309289!3f0!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 <div class="footer">
-  <p>Footer</p>
-</div>
-
+  <p>Contact
 </body>
 </html>
